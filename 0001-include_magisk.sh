@@ -21,12 +21,13 @@ done
 log "Magisk patches have been applied to the build tree"
 
 # Determine the latest version of Magisk
-MAGISK_VERSION=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases | jq -r '.[0] | .tag_name')
+#MAGISK_VERSION=$(curl -s https://api.github.com/repos/topjohnwu/Magisk/releases | jq -r '.[0] | .tag_name')
 
 log "Latest version of Magisk is ${MAGISK_VERSION}, downloading Magisk..."
 
 # Download the version of Magisk that was previously detected
-wget https://github.com/topjohnwu/Magisk/releases/download/${MAGISK_VERSION}/Magisk-${MAGISK_VERSION}.zip -O magisk-latest.zip
+#wget https://github.com/topjohnwu/Magisk/releases/download/${MAGISK_VERSION}/Magisk-${MAGISK_VERSION}.zip -O magisk-latest.zip
+wget https://github.com/topjohnwu/Magisk/releases/download/v21.1/Magisk-v21.1.zip -O magisk-latest.zip
 mkdir -p magisk-latest
 unzip -d magisk-latest magisk-latest.zip
 rm -rf magisk-latest.zip
