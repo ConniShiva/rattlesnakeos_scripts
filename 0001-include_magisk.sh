@@ -27,7 +27,7 @@ log "Latest version of Magisk is ${MAGISK_VERSION}, downloading Magisk..."
 
 # Download the version of Magisk that was previously detected
 #wget https://github.com/topjohnwu/Magisk/releases/download/${MAGISK_VERSION}/Magisk-${MAGISK_VERSION}.zip -O magisk-latest.zip
-wget https://github.com/topjohnwu/Magisk/releases/download/v21.1/Magisk-v21.1.zip -O magisk-latest.zip
+wget https://github.com/topjohnwu/Magisk/releases/download/v20.3/Magisk-v20.3.zip -O magisk-latest.zip
 mkdir -p magisk-latest
 unzip -d magisk-latest magisk-latest.zip
 rm -rf magisk-latest.zip
